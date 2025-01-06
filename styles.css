@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    background: #007acc;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+#hero h1 {
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    margin-bottom: 1.5rem;
+}
+
+#hero .button {
+    background: #fff;
+    color: #007acc;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#hero .button:hover {
+    background: #e1e1e1;
+}
+
+/* Section Styles */
+section {
+    padding: 2rem 1rem;
+    margin: 1rem 0;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    color: #007acc;
+}
+
+section p {
+    margin: 0.5rem 0;
+}
+
+/* Projects Section */
+#projects .project {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fafafa;
+}
+
+#projects .project h3 {
+    margin-bottom: 0.5rem;
+}
+
+#projects .project a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#projects .project a:hover {
+    text-decoration: underline;
+}
+
+/* Skills Section */
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills ul li {
+    background: #eef;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin: 0.5rem 0;
+}
+
+#contact ul li a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+#contact ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
