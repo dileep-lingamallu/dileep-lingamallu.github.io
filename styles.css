@@ -39,19 +39,41 @@ header .logo {
 
 /* Navigation Menu */
 #nav-menu {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    max-height: 0; /* Initially collapsed */
+    overflow: hidden;
+    transition: max-height 0.4s ease; /* Smooth open/close animation */
+}
+
+#nav-menu.show {
     display: flex;
-    align-items: center;
+    max-height: 300px; /* Adjust based on your menu content */
 }
 
 #nav-menu ul {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
 }
 
 #nav-menu ul li a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    text-align: center;
     color: #fff;
-    font-weight: bold;
+}
+
+#nav-menu ul li a:hover {
+    background: #007acc;
+    color: #fff;
 }
 
 /* Hamburger Menu */
@@ -66,6 +88,20 @@ header .logo {
     width: 25px;
     height: 3px;
     background: #fff;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Hamburger Icon Animation for Open State */
+.hamburger.open div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open div:nth-child(2) {
+    opacity: 0; /* Hide the middle line */
+}
+
+.hamburger.open div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* Responsive Header */
@@ -75,37 +111,7 @@ header .logo {
     }
 
     #nav-menu {
-        display: none; /* Hide the menu by default */
-        flex-direction: column;
-        background: #222;
-        position: absolute;
-        top: 100%;
-        right: 0;
         width: 100%;
-        padding: 1rem 0;
-    }
-
-    #nav-menu ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    #nav-menu ul li a {
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
-        width: 100%;
-        text-align: center;
-        color: #fff;
-    }
-
-    #nav-menu ul li a:hover {
-        background: #007acc;
-        color: #fff;
-    }
-
-    #nav-menu.show {
-        display: flex; /* Show the menu when toggled */
     }
 }
 
