@@ -30,11 +30,11 @@ header {
 }
 
 header .logo {
-    font-family: 'Parisienne', cursive; /* Elegant script font */
-    font-size: 2.5rem; /* Adjust size for prominence */
-    font-weight: 400; /* Normal weight for a smooth look */
-    color: #ffd700; /* Luxurious gold color */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    font-family: 'Parisienne', cursive; 
+    font-size: 2.5rem; 
+    font-weight: 400; 
+    color: #007acc
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
 }
 
 header nav ul {
