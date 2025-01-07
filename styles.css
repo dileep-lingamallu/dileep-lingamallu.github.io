@@ -101,6 +101,23 @@ section {
     padding: 0 1rem;
 }
 
+#typewriter {
+    display: inline-block;
+    border-right: 2px solid #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink 0.7s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: #fff;
+    }
+}
+
 /* Experience Section */
 #experience {
     background: #f9f9f9;
