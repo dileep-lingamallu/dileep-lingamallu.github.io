@@ -185,12 +185,24 @@
         document.addEventListener("DOMContentLoaded", () => {
             const hamburger = document.getElementById("hamburger");
             const navMenu = document.getElementById("nav-menu");
-
+            const navLinks = navMenu.querySelectorAll("a");
+    
+            // Toggle menu on hamburger click
             hamburger.addEventListener("click", () => {
                 navMenu.classList.toggle("show");
+                hamburger.classList.toggle("open"); // Animate hamburger icon
+            });
+    
+            // Close menu on link click
+            navLinks.forEach(link => {
+                link.addEventListener("click", () => {
+                    navMenu.classList.remove("show");
+                    hamburger.classList.remove("open");
+                });
             });
         });
     </script>
+
     
     <!-- JavaScript for Sorting Experience -->
     <script>
