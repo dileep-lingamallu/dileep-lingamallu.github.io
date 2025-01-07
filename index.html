@@ -28,7 +28,9 @@
     <!-- Hero Section -->
     <section id="hero" class="fade-in">
         <div class="hero-overlay">
-            <h1>Hi, I'm Dileep Lingamallu</h1>
+            <h1>
+                <span id="typewriter"></span>
+            </h1>
             <p>Data Engineer | Cloud Enthusiast | Big Data Specialist</p>
             <a href="#projects" class="btn">Explore My Work</a>
         </div>
@@ -152,6 +154,26 @@
         <p>© 2025 Dileep Lingamallu. All rights reserved.</p>
     </footer>
 
+    <!-- JavaScript for Headline typewriter effect -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const text = "Hi, I'm Dileep Lingamallu"; // The text to type
+            const speed = 100; // Typing speed in milliseconds
+            let index = 0;
+
+            function typeWriter() {
+                if (index < text.length) {
+                    document.getElementById("typewriter").textContent += text.charAt(index);
+                    index++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
+
+            // Start the typewriter animation
+            typeWriter();
+        });
+    </script>
+    
     <!-- JavaScript for Sorting Experience -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
