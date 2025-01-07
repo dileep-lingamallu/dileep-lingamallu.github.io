@@ -14,7 +14,12 @@
     <!-- Header Section -->
     <header>
         <div class="logo">Dileep Lingamallu</div>
-        <nav>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav id="nav-menu">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -172,6 +177,18 @@
 
             // Start the typewriter animation
             typeWriter();
+        });
+    </script>
+
+    <!-- JavaScript to toggle navigation menu -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburger = document.getElementById("hamburger");
+            const navMenu = document.getElementById("nav-menu");
+
+            hamburger.addEventListener("click", () => {
+                navMenu.classList.toggle("show");
+            });
         });
     </script>
     
