@@ -245,28 +245,41 @@ section {
 
 /* About Section */
 #about {
-    background: #f9f9f9; /* Light background for contrast */
+    background: linear-gradient(135deg, #007acc, #005b99); /* Subtle gradient for a premium look */
+    color: #fff; /* White text for contrast */
     padding: 4rem 1rem;
     text-align: center;
 }
 
 #about h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1.5rem;
-    color: #007acc; /* Primary theme color */
-    font-weight: bold;
+    color: #ffd700; /* Gold for a highlight effect */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 #about p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.8;
-    color: #555; /* Subtle text color */
+    color: #f0f0f0; /* Softer white for body text */
     max-width: 800px;
     margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
 }
 
 #about p br {
     margin-bottom: 1rem;
+}
+
+#about p:last-child {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffd700; /* Highlight call-to-action */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Glow effect */
 }
 
 #about .container {
@@ -274,13 +287,24 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
     padding: 1rem;
 }
 
-#about p:last-child {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #007acc; /* Highlight call-to-action */
+/* Optional Animation for Section */
+#about {
+    animation: fadeInUp 1s ease-out; /* Fade and slide-in effect */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Experience Section */
