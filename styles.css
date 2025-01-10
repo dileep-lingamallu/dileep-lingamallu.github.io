@@ -30,11 +30,11 @@ header {
 }
 
 header .logo {
-    font-family: 'Parisienne', cursive;
-    font-size: 2.5rem;
-    font-weight: 400;
-    color: #007acc;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-family: 'Parisienne', cursive; /* Keep the elegant font */
+    font-size: clamp(1.5rem, 5vw, 3rem); /* Dynamically scale between 1.5rem and 3rem */
+    font-weight: 400; /* Ensure the weight remains normal */
+    color: #007acc; /* Keep the primary theme color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
 }
 
 /* Navigation Menu */
