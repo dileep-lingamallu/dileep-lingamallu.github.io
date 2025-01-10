@@ -245,26 +245,27 @@ section {
 
 /* About Section */
 #about {
-    background: #ffffff; /* Clean white background for simplicity */
-    color: #333; /* Dark text for readability */
+    background: #f9f9f9; /* Soft gray for better contrast */
+    color: #333; /* Dark gray text for readability */
     padding: 4rem 1rem;
-    text-align: center;
+    text-align: left; /* Left-aligned text for natural reading */
 }
 
 #about h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: #007acc; /* Primary blue for a modern touch */
+    color: #005b99; /* Muted blue for a modern touch */
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    text-align: center; /* Center-align the heading */
 }
 
 #about p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #555; /* Subtle gray for secondary text */
+    font-size: 1.2rem; /* Larger font size for better readability */
+    line-height: 1.8; /* Increase line spacing for clarity */
+    color: #444; /* Slightly softer gray for text */
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto; /* Center content */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -274,26 +275,36 @@ section {
 
 #about p:last-child {
     margin-top: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem; /* Slightly larger for emphasis */
     font-weight: bold;
-    color: #007acc; /* Highlight the call-to-action */
+    color: #005b99; /* Muted blue for call-to-action */
+    text-align: center; /* Center-align the call-to-action */
 }
 
-/* Optional Subtle Shadow for the Section */
+/* Optional Styling for Section Container */
+#about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Optional Subtle Shadow */
 #about {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Adds subtle depth */
     border-radius: 8px; /* Smooth corners */
+    padding: 3rem 1.5rem;
 }
 
-/* Optional Animation for Section */
+/* Animation for Smooth Fade-In */
 #about {
-    animation: fadeInUp 1s ease-out; /* Smooth fade-in effect */
+    animation: fadeIn 0.8s ease-out;
 }
 
-@keyframes fadeInUp {
+@keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
