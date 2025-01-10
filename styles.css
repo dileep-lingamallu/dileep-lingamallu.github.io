@@ -245,56 +245,45 @@ section {
 
 /* About Section */
 #about {
-    background: #fdfdfd; /* Soft white for a clean and modern look */
-    color: #2c3e50; /* Dark gray-blue for text */
-    padding: 4rem 1.5rem;
-    text-align: left; /* Left-align text for natural reading */
-    font-family: 'Lora', serif; /* Attractive serif font for body text */
-    line-height: 1.8; /* Add breathing room between lines */
-    letter-spacing: 0.5px; /* Subtle spacing for elegance */
+    background: #ffffff; /* Pure white background for simplicity */
+    color: #000000; /* Black text for maximum contrast and readability */
+    padding: 4rem 2rem;
+    text-align: center; /* Center-align the content */
 }
 
 #about h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: #1a73e8; /* Modern blue for heading */
-    font-family: 'Open Sans', sans-serif; /* Clean sans-serif font for the heading */
-    text-align: center; /* Centered heading for balance */
+    color: #000; /* Solid black for the heading */
+    font-family: 'Open Sans', sans-serif; /* Clean and modern font */
 }
 
 #about p {
-    font-size: 1.2rem; /* Larger font size for readability */
-    color: #4a4a4a; /* Neutral gray for text */
+    font-size: 1.2rem; /* Comfortable size for readability */
+    line-height: 1.8; /* Add space between lines */
+    color: #000; /* Solid black for body text */
     max-width: 800px;
-    margin: 0 auto; /* Center the paragraph block */
+    margin: 0 auto; /* Center-align the block */
+    text-align: left; /* Left-align paragraphs for a natural reading flow */
+    text-indent: 1.5rem; /* Indent the first line of each paragraph */
+    font-family: 'Lora', serif; /* Elegant serif font for text */
 }
 
-#about p br {
-    margin-bottom: 1rem; /* Add spacing around line breaks */
-}
-
-#about p:last-child {
-    margin-top: 2rem;
-    font-size: 1.3rem; /* Slightly larger for emphasis */
-    color: #1a73e8; /* Modern blue for call-to-action */
-    text-align: center; /* Center the call-to-action */
-}
-
-/* Optional Shadow and Border */
+/* Subtle Shadow for Section */
 #about {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    border-radius: 10px; /* Smooth corners for a modern touch */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add light shadow */
+    border-radius: 8px; /* Smooth corners for a refined look */
 }
 
-/* Animation for Smooth Entry */
+/* Optional Animation for Entry */
 #about {
-    animation: fadeInUp 1s ease-out;
+    animation: fadeIn 0.8s ease-in;
 }
 
-@keyframes fadeInUp {
+@keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(30px);
     }
     to {
         opacity: 1;
