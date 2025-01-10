@@ -245,26 +245,24 @@ section {
 
 /* About Section */
 #about {
-    background: linear-gradient(135deg, #007acc, #005b99); /* Subtle gradient for a premium look */
-    color: #fff; /* White text for contrast */
+    background: #ffffff; /* Clean white background for simplicity */
+    color: #333; /* Dark text for readability */
     padding: 4rem 1rem;
     text-align: center;
 }
 
 #about h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: #ffd700; /* Gold for a highlight effect */
+    color: #007acc; /* Primary blue for a modern touch */
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-weight: 600;
 }
 
 #about p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.8;
-    color: #f0f0f0; /* Softer white for body text */
+    color: #555; /* Subtle gray for secondary text */
     max-width: 800px;
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
@@ -276,24 +274,20 @@ section {
 
 #about p:last-child {
     margin-top: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    color: #ffd700; /* Highlight call-to-action */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Glow effect */
+    color: #007acc; /* Highlight the call-to-action */
 }
 
-#about .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
+/* Optional Subtle Shadow for the Section */
+#about {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds depth */
+    border-radius: 8px; /* Smooth corners */
 }
 
 /* Optional Animation for Section */
 #about {
-    animation: fadeInUp 1s ease-out; /* Fade and slide-in effect */
+    animation: fadeInUp 1s ease-out; /* Smooth fade-in effect */
 }
 
 @keyframes fadeInUp {
