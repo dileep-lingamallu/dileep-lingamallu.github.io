@@ -247,6 +247,7 @@ section {
     animation: wave 1s infinite alternate; /* Waving animation */
     display: inline-block; /* Ensures proper positioning */
     transform-origin: 70% 70%; /* Adjust rotation axis for a natural wave */
+    font-size: 2rem; /* Increase size of the waving hand */
 }
 
 @keyframes wave {
