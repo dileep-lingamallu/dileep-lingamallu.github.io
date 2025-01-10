@@ -192,20 +192,27 @@
     </footer>
 
     <!-- JavaScript for Headline typewriter effect -->
+    <!-- Include the Waving Hand Element -->
+    <h1 id="typewriter"></h1>
+    <span class="waving-hand" style="display: none;">👋</span>
+    
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            const text = "Hi, I'm Dileep Lingamallu"; // The text to type
+            const text = "Hi all, I'm Dileep"; // The text to type
             const speed = 100; // Typing speed in milliseconds
             let index = 0;
-
+    
             function typeWriter() {
                 if (index < text.length) {
                     document.getElementById("typewriter").textContent += text.charAt(index);
                     index++;
                     setTimeout(typeWriter, speed);
+                } else {
+                    // Show the waving hand after typing is complete
+                    document.querySelector(".waving-hand").style.display = "inline-block";
                 }
             }
-
+    
             // Start the typewriter animation
             typeWriter();
         });
