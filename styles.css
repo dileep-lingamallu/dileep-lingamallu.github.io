@@ -245,63 +245,53 @@ section {
 
 /* About Section */
 #about {
-    background: #f9f9f9; /* Soft gray for better contrast */
-    color: #333; /* Dark gray text for readability */
-    padding: 4rem 1rem;
-    text-align: left; /* Left-aligned text for natural reading */
+    background: #fdfdfd; /* Soft white for a clean and modern look */
+    color: #2c3e50; /* Dark gray-blue for text */
+    padding: 4rem 1.5rem;
+    text-align: left; /* Left-align text for natural reading */
+    font-family: 'Lora', serif; /* Attractive serif font for body text */
+    line-height: 1.8; /* Add breathing room between lines */
+    letter-spacing: 0.5px; /* Subtle spacing for elegance */
 }
 
 #about h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: #005b99; /* Muted blue for a modern touch */
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    text-align: center; /* Center-align the heading */
+    color: #1a73e8; /* Modern blue for heading */
+    font-family: 'Open Sans', sans-serif; /* Clean sans-serif font for the heading */
+    text-align: center; /* Centered heading for balance */
 }
 
 #about p {
-    font-size: 1.2rem; /* Larger font size for better readability */
-    line-height: 1.8; /* Increase line spacing for clarity */
-    color: #444; /* Slightly softer gray for text */
+    font-size: 1.2rem; /* Larger font size for readability */
+    color: #4a4a4a; /* Neutral gray for text */
     max-width: 800px;
-    margin: 0 auto; /* Center content */
-    font-family: 'Poppins', sans-serif;
+    margin: 0 auto; /* Center the paragraph block */
 }
 
 #about p br {
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; /* Add spacing around line breaks */
 }
 
 #about p:last-child {
     margin-top: 2rem;
     font-size: 1.3rem; /* Slightly larger for emphasis */
-    font-weight: bold;
-    color: #005b99; /* Muted blue for call-to-action */
-    text-align: center; /* Center-align the call-to-action */
+    color: #1a73e8; /* Modern blue for call-to-action */
+    text-align: center; /* Center the call-to-action */
 }
 
-/* Optional Styling for Section Container */
-#about .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-/* Optional Subtle Shadow */
+/* Optional Shadow and Border */
 #about {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Adds subtle depth */
-    border-radius: 8px; /* Smooth corners */
-    padding: 3rem 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 10px; /* Smooth corners for a modern touch */
 }
 
-/* Animation for Smooth Fade-In */
+/* Animation for Smooth Entry */
 #about {
-    animation: fadeIn 0.8s ease-out;
+    animation: fadeInUp 1s ease-out;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(20px);
