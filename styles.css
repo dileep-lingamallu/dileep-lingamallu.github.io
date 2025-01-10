@@ -243,6 +243,21 @@ section {
     }
 }
 
+.waving-hand {
+    animation: wave 1s infinite alternate; /* Waving animation */
+    display: inline-block; /* Ensures proper positioning */
+    transform-origin: 70% 70%; /* Adjust rotation axis for a natural wave */
+}
+
+@keyframes wave {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
+}
+
 /* About Section */
 #about {
     background: #ffffff; /* White background for simplicity */
