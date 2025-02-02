@@ -710,6 +710,19 @@ body.dark-mode .project-card {
 /* Responsive Adjustments for Smaller Screens */
 @media (max-width: 768px) {
   .project-grid {
+    display: block; /* switch to block to ensure visibility */
+    padding: 0 1rem;
+  }
+  
+  .project-card {
+    margin-bottom: 1.5rem; /* add spacing between cards */
+    padding: 1rem;
+  }
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+  .project-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 0 1rem;
