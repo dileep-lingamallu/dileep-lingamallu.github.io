@@ -1,307 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Dileep, a Data Engineer specializing in building efficient data pipelines and scalable systems.">
-    <title>Dileep Lingamallu - Data Engineer</title>
-    <link rel="icon" href="Favicon.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Dileep, a Data Engineer specializing in building efficient data pipelines and scalable systems." />
+  <title>Dileep Lingamallu - Data Engineer</title>
+  <link rel="icon" href="Favicon.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+  integrity="sha512-xh6K7P7h+ryHlV9D8wVm5r5b9xXgKxFWNmPjxwUu/LOqg0FY49sP6E2lFaS5N/8OOjb0sUYoHjnkJYo6F1L5AA==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="logo">Dileep Lingamallu</div>
+<!-- Header Section -->
+<header>
+    <div class="header-container">
+      <div class="logo">Dileep Lingamallu</div>
+      
+      <!-- Navigation Menu -->
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Right-Aligned Controls -->
+      <div class="header-right">
+        <!-- Dark Mode Toggle Switch -->
+        <div class="toggle-container">
+          <input type="checkbox" id="theme-checkbox" />
+          <label for="theme-checkbox" class="toggle-label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <span class="toggle-knob"></span>
+          </label>
+        </div>
+        
+        <!-- Hamburger Menu -->
         <div class="hamburger" id="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-        <nav id="nav-menu">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+      </div>
+    </div>
+  </header>  
 
-    <!-- Hero Section -->
-    <section id="hero" class="fade-in">
-        <div class="hero-overlay">
-            <h1>
-                <span id="typewriter"></span>
-                <span class="waving-hand" style="display: none;">👋</span>
-            </h1>
-            <p>Data Engineer | Cloud Enthusiast | Big Data Specialist</p>
-            <a href="#projects" class="btn">Explore My Work</a>
+  <!-- Hero Section -->
+  <section id="hero" class="fade-in">
+    <div class="hero-overlay">
+      <!-- Fixed Heading -->
+      <h1>
+        Hi all, I'm Dileep Lingamallu <span class="waving-hand" aria-hidden="true">👋</span>
+        <span class="waving-hand" aria-hidden="true" style="display: none;">👋</span>
+      </h1>
+      <!-- Second Line with Fixed and Dynamic Part -->
+      <h2>
+        I'm a <span id="typewriter"></span>
+      </h2>
+      <p>Driven to learn, innovate, and excel in the world of tech — One project at a time.</p>
+      <a href="#projects" class="btn">Explore My Work</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+<section id="about" class="fade-in">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <!-- Intro Paragraph -->
+        <div class="about-intro">
+          <p>
+            Hi, I'm Dileep Lingamallu—a passionate data professional who transforms complex data into actionable insights. With over 4 years of experience building robust data pipelines and scalable cloud solutions, I help businesses make smarter, data-driven decisions.
+          </p>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="fade-in">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                Hello! I’m a data enthusiast with a passion for unraveling complexities and transforming raw information into meaningful insights. 
-                With over 4 years of experience in data quality, ETL processes, and cloud-based transformation, I thrive on finding innovative 
-                solutions that drive impact. 
-                <br>
-                <br>
-                Certified in Databricks and proficient in SQL, Python, and Power BI, I specialize in creating 
-                scalable systems, automating workflows, and enhancing decision-making processes. My expertise spans data governance, lineage mapping, 
-                process optimization, and much more—adapting to the challenges of an ever-evolving data landscape.
-                <br>
-                <br>
-                With a master's degree in Business Analytics from Cal State University, I’ve developed a unique ability to bridge technical and 
-                strategic perspectives. When I’m not immersed in the world of data, you’ll find me exploring my love for art or getting lost in the pages of a captivating book.
-                <br>
-                <br>
-                Let’s collaborate and turn possibilities into actionable solutions!
-
-            </p>
+        <!-- Highlights Cards -->
+        <div class="about-highlights">
+          <div class="highlight">
+            <i class="fas fa-cogs"></i>
+            <h3>Data Engineer</h3>
+            <p>Automating efficient data workflows that power decision-making.</p>
+          </div>
+          <div class="highlight">
+            <i class="fas fa-cloud"></i>
+            <h3>Cloud Solutions</h3>
+            <p>Leveraging AWS, Azure, and Python for robust cloud solutions.</p>
+          </div>
+          <div class="highlight">
+            <i class="fas fa-chart-line"></i>
+            <h3>Data Analytics & Visualization</h3>
+            <p>Crafting real-time dashboards that turn data into insights.</p>
+          </div>
         </div>
-    </section>
+        <!-- Call to Action -->
+        <div class="about-cta">
+          <p>Let's transform data challenges into opportunities. <a href="#contact">Get in touch!</a></p>
+        </div>
+      </div>
+    </div>
+  </section>  
 
-    <!-- Experience Section -->
+<!-- Experience Section -->
 <section id="experience" class="fade-in">
     <div class="container">
-        <h2>Experience</h2>
-        <div class="timeline">
-            <!-- Adroit Technologies -->
-            <div class="timeline-item">
-                <div class="timeline-icon"></div>
-                <div class="timeline-content">
-                    <p class="date">June 2024 – Present</p>
-                    <h3>Systems Data Analyst</h3>
-                    <h4>Adroit Tech Solutions</h4>
-                    <p><!-- Placeholder for Adroit Tech Solutions paragraph --></p>
-                </div>
+      <h2>Experience</h2>
+      <div class="timeline-wrapper">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-content left">
+            <div class="timeline-icon">
+              <!-- Example icon: you can use an SVG or font icon -->
+              <span class="icon">💼</span>
             </div>
-            <!-- Cisco Systems -->
-            <div class="timeline-item">
-                <div class="timeline-icon"></div>
-                <div class="timeline-content">
-                    <p class="date">June 2023 – May 2024</p>
-                    <h3>Software Engineer II</h3>
-                    <h4>Cisco Systems</h4>
-                    <p><!-- Placeholder for Cisco Systems paragraph --></p>
-                </div>
+            <div class="content">
+              <span class="date">June 2024 – Present</span>
+              <h3>Systems Analyst</h3>
+              <h4>Adroit Technologies</h4>
+              <p><!-- Details about your role at Adroit Tech Solutions --></p>
             </div>
-            <!-- IQTech (Stealth Startup) -->
-            <div class="timeline-item">
-                <div class="timeline-icon"></div>
-                <div class="timeline-content">
-                    <p class="date">January 2020 – November 2021</p>
-                    <h3>Software Engineer</h3>
-                    <h4>IQTech (Stealth Startup)</h4>
-                    <p><!-- Placeholder for IQTech paragraph --></p>
-                </div>
-            </div>
-            <!-- Aviso Inc -->
-            <div class="timeline-item">
-                <div class="timeline-icon"></div>
-                <div class="timeline-content">
-                    <p class="date">January 2019 – December 2019</p>
-                    <h3>Software Engineer</h3>
-                    <h4>Aviso Inc</h4>
-                    <p><!-- Placeholder for Aviso Inc paragraph --></p>
-                </div>
-            </div>
+          </div>
         </div>
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-content right">
+            <div class="timeline-icon">
+              <span class="icon">💻</span>
+            </div>
+            <div class="content">
+              <span class="date">June 2023 – May 2024</span>
+              <h3>Software Engineer II</h3>
+              <h4>Cisco Systems</h4>
+              <p><!-- Details about your role at Cisco Systems --></p>
+            </div>
+          </div>
+        </div>
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-content left">
+            <div class="timeline-icon">
+              <span class="icon">💼</span>
+            </div>
+            <div class="content">
+              <span class="date">January 2020 – November 2021</span>
+              <h3>Software Engineer (Data Integration Focus)</h3>
+              <h4>Stealth Startup</h4>
+              <p><!-- Details about your role at IQTech --></p>
+            </div>
+          </div>
+        </div>
+        <!-- Timeline Item 4 -->
+        <div class="timeline-item">
+          <div class="timeline-content right">
+            <div class="timeline-icon">
+              <span class="icon">💻</span>
+            </div>
+            <div class="content">
+              <span class="date">January 2019 – December 2019</span>
+              <h3>Software Engineer</h3>
+              <h4>Aviso Inc</h4>
+              <p><!-- Details about your role at Aviso Inc --></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>  
 
-    <!-- Education Section -->
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>Master's in Business Analytics</h3>
-                <p>California State University EastBay, 2022 - 2023</p>
-            </div>
-            <div class="education-item">
-                <h3>Bachelor's in Computer Science</h3>
-                <p>National Institute of Technology, 2014 - 2018</p>
-            </div>
+<!-- Education Section -->
+<section id="education" class="fade-in">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="education-timeline">
+        <div class="education-item">
+          <div class="edu-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="edu-details">
+            <h3>Master's in Business Analytics</h3>
+            <p>California State University EastBay</p>
+            <span class="edu-year">2022 - 2023</span>
+          </div>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Data Pipeline Automation</h3>
-                    <p>Built an end-to-end data pipeline using Apache Airflow and AWS, reducing data processing time by 30%.</p>
-                    <a href="https://github.com/username/project1" target="_blank">View on GitHub</a>
-                </div>
-                <div class="project-card">
-                    <h3>Real-Time Analytics</h3>
-                    <p>Developed a real-time analytics platform using Kafka and Spark, enabling live data processing.</p>
-                    <a href="https://github.com/username/project2" target="_blank">View on GitHub</a>
-                </div>
-                <div class="project-card">
-                    <h3>Big Data Insights</h3>
-                    <p>Implemented a big data solution using Hadoop, processing terabytes of data for actionable insights.</p>
-                    <a href="https://github.com/username/project3" target="_blank">View on GitHub</a>
-                </div>
-            </div>
+        <div class="education-item">
+          <div class="edu-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="edu-details">
+            <h3>Bachelor's in Computer Science</h3>
+            <p>National Institute of Technology</p>
+            <span class="edu-year">2014 - 2018</span>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>    
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-list">
-                <span>Python</span>
-                <span>SQL</span>
-                <span>Apache Spark</span>
-                <span>Hadoop</span>
-                <span>AWS</span>
-                <span>Airflow</span>
-                <span>PostgreSQL</span>
-                <span>MongoDB</span>
-            </div>
+  <!-- Projects Section -->
+  <section id="projects" class="fade-in">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+            <h3>Data Analysis of Home Listings Data</h3>
+            <p>
+              A comprehensive analysis of home listings data that uncovers market trends. The project cleans raw data, performs exploratory analysis, and visualizes insights such as pricing trends and property characteristics to help understand the real estate market.
+            </p>
+            <a href="https://github.com/dileep-lingamallu/Data-Analysis-of-Home-listings-data" target="_blank" rel="noopener">
+              View on GitHub
+            </a>
+          </div>
+          <div class="project-card">
+            <h3>Sports Analytics – NBA Game Prediction</h3>
+            <p>
+              An analytical project that leverages historical NBA game data to predict game outcomes. This project involves data cleaning, statistical analysis, and model building to forecast game results and provides insights through interactive visualizations.
+            </p>
+            <a href="https://github.com/dileep-lingamallu/Sports-Analytics---NBA-Game-Prediction" target="_blank" rel="noopener">
+              View on GitHub
+            </a>
+          </div>
+          <div class="project-card">
+            <h3>AWS-Based Serverless Data Pipeline for YouTube Analytics</h3>
+            <p>
+              This project builds a scalable, serverless data pipeline on AWS to analyze YouTube video statistics and gain insights. The pipeline ingests YouTube data via the AWS CLI into Amazon S3, transforms it using AWS Lambda and AWS Glue, and analyzes it with AWS Athena. The dataset comprises CSV files with video metrics and JSON files mapping regional category data.
+            </p>
+            <a href="https://github.com/dileep-lingamallu/DataPipeline-for-YouTube-Ad-Recommendations" target="_blank" rel="noopener">
+              View on GitHub
+            </a>
+          </div>                    
+        <div class="project-card">
+          <h3>Data Pipeline Automation</h3>
+          <p>Built an end-to-end data pipeline using Apache Airflow and AWS, reducing data processing time by 30%.</p>
+          <a href="https://github.com/username/project1" target="_blank" rel="noopener">View on GitHub</a>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Let's connect! Feel free to reach out through email or connect on LinkedIn.</p>
-            <ul>
-                <li>Email: <a href="mailto:eswardileep99@gmail.com.com">eswardileep99@gmail.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/eswardileep99" target="_blank">linkedin.com/in/eswardileep99</a></li>
-                <li>GitHub: <a href="https://github.com/username" target="_blank">github.com/dileep-lingamallu</a></li>
-            </ul>
+        <div class="project-card">
+          <h3>Real-Time Analytics</h3>
+          <p>Developed a real-time analytics platform using Kafka and Spark, enabling live data processing.</p>
+          <a href="https://github.com/username/project2" target="_blank" rel="noopener">View on GitHub</a>
         </div>
-    </section>
+        <div class="project-card">
+          <h3>Big Data Insights</h3>
+          <p>Implemented a big data solution using Hadoop, processing terabytes of data for actionable insights.</p>
+          <a href="https://github.com/username/project3" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Dileep Lingamallu. All rights reserved.</p>
-    </footer>
+  <!-- Skills Section -->
+  <section id="skills" class="fade-in">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span>Python</span>
+        <span>SQL</span>
+        <span>Apache Spark</span>
+        <span>Hadoop</span>
+        <span>AWS</span>
+        <span>Airflow</span>
+        <span>PostgreSQL</span>
+        <span>MongoDB</span>
+      </div>
+    </div>
+  </section>
 
-    <!-- JavaScript for Headline typewriter effect -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const text = "Hi all, I'm Dileep"; // The text to type
-            const speed = 100; // Typing speed in milliseconds
-            let index = 0;
-    
-            function typeWriter() {
-                if (index < text.length) {
-                    document.getElementById("typewriter").textContent += text.charAt(index);
-                    index++;
-                    setTimeout(typeWriter, speed);
-                } else {
-                    // Show the waving hand after typing is complete
-                    document.querySelector(".waving-hand").style.display = "inline-block";
-                }
-            }
-    
-            // Start the typewriter animation
-            typeWriter();
+<!-- Contact Section -->
+<section id="contact" class="fade-in">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="contact-methods">
+        <a href="mailto:eswardileep99@gmail.com" class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <p>Email</p>
+        </a>
+        <a href="https://www.linkedin.com/in/eswardileep99" target="_blank" rel="noopener" class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <p>LinkedIn</p>
+        </a>
+        <a href="https://github.com/dileep-lingamallu" target="_blank" rel="noopener" class="contact-item">
+          <i class="fab fa-github"></i>
+          <p>GitHub</p>
+        </a>
+      </div>
+    </div>
+  </section>  
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Dileep Lingamallu. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  // List of items to cycle through
+  const items = ["Data Engineer", "Data Analyst", "Cloud Enthusiast", "BigData Dev"];
+  const typewriterElement = document.getElementById("typewriter");
+  
+  // Timing configuration (in milliseconds)
+  const typingSpeed = 100;       // Speed for typing each character
+  const erasingSpeed = 50;       // Speed for erasing each character
+  const pauseAfterTyping = 2000; // Pause before starting to erase when a word is complete
+  const pauseBetweenItems = 500; // Pause after erasing before typing the next word
+  
+  let itemIndex = 0;  // Which item in the array we're currently typing
+  let charIndex = 0;  // Which character of the current item we're on
+  
+  function type() {
+    if (charIndex < items[itemIndex].length) {
+      // Append the next character
+      typewriterElement.textContent += items[itemIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(type, typingSpeed);
+    } else {
+      // Word complete: pause, then start erasing
+      setTimeout(erase, pauseAfterTyping);
+    }
+  }
+  
+  function erase() {
+    if (charIndex > 0) {
+      // Remove one character at a time
+      typewriterElement.textContent = items[itemIndex].substring(0, charIndex - 1);
+      charIndex--;
+      setTimeout(erase, erasingSpeed);
+    } else {
+      // Move to the next word
+      itemIndex++;
+      if (itemIndex >= items.length) {
+        itemIndex = 0;
+      }
+      setTimeout(type, pauseBetweenItems);
+    }
+  }
+  
+  // Start the typewriter effect
+  type();
+
+      // Hamburger Menu Toggle
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("nav-menu");
+      const navLinks = navMenu.querySelectorAll("a");
+      hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+        hamburger.classList.toggle("open");
+      });
+      navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("show");
+          hamburger.classList.remove("open");
         });
-    </script>
+      });
 
-    <!-- JavaScript to toggle navigation menu -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const hamburger = document.getElementById("hamburger");
-            const navMenu = document.getElementById("nav-menu");
-            const navLinks = navMenu.querySelectorAll("a");
-    
-            // Toggle menu on hamburger click
-            hamburger.addEventListener("click", () => {
-                navMenu.classList.toggle("show");
-                hamburger.classList.toggle("open"); // Animate hamburger icon
-            });
-    
-            // Close menu on link click
-            navLinks.forEach(link => {
-                link.addEventListener("click", () => {
-                    navMenu.classList.remove("show");
-                    hamburger.classList.remove("open");
-                });
-            });
-    
-            // Animations for fade-in and slide-in sections
-            const faders = document.querySelectorAll(".fade-in");
-            const sliders = document.querySelectorAll(".slide-in");
-    
-            const appearOptions = {
-                threshold: 0.5,
-                rootMargin: "0px 0px -50px 0px"
-            };
-    
-            const appearOnScroll = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (!entry.isIntersecting) return;
-                    entry.target.classList.add("appear");
-                    observer.unobserve(entry.target);
-                });
-            }, appearOptions);
-    
-            faders.forEach(fader => appearOnScroll.observe(fader));
-            sliders.forEach(slider => appearOnScroll.observe(slider));
+      // Smooth Scrolling for In-Page Links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+          });
         });
-    </script>
-    
-    <!-- JavaScript for Sorting Experience -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const experienceList = document.getElementById("experience-list");
-            const items = Array.from(experienceList.getElementsByClassName("experience-item"));
+      });
 
-            items.sort((a, b) => b.dataset.year - a.dataset.year);
-
-            items.forEach(item => experienceList.appendChild(item));
+      // Intersection Observer for Fade-In / Slide-In Animations
+      const animatedItems = document.querySelectorAll(".fade-in, .slide-in");
+      const observerOptions = {
+        threshold: 0.5,
+        rootMargin: "0px 0px -50px 0px"
+      };
+      const appearOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("appear");
+          observer.unobserve(entry.target);
         });
-    </script>
+      }, observerOptions);
+      animatedItems.forEach(item => {
+        appearOnScroll.observe(item);
+      });
 
-    <!-- Smooth Scrolling and Animation JavaScript -->
-    <script>
-        // Smooth Scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener("click", function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute("href")).scrollIntoView({
-                    behavior: "smooth"
-                });
-            });
-        });
-
-        // Scroll Animations
-        const faders = document.querySelectorAll(".fade-in");
-        const sliders = document.querySelectorAll(".slide-in");
-
-        const appearOptions = {
-            threshold: 0.5,
-            rootMargin: "0px 0px -50px 0px"
-        };
-
-        const appearOnScroll = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) return;
-                entry.target.classList.add("appear");
-                observer.unobserve(entry.target);
-            });
-        }, appearOptions);
-
-        faders.forEach(fader => appearOnScroll.observe(fader));
-        sliders.forEach(slider => appearOnScroll.observe(slider));
-    </script>
-    
+      // Dark/Light Mode Toggle
+      const themeCheckbox = document.getElementById("theme-checkbox");
+      themeCheckbox.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode", themeCheckbox.checked);
+      });
+    });
+  </script>
 </body>
 </html>
